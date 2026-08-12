@@ -1,0 +1,18 @@
+generated: '2026-08-12'
+method: searched
+source: https://epicrispr.com/sitemap_index.xml
+limit_count: 0
+rate_limits: []
+headers: []
+note: >-
+  No rate limits are documented because there is no API to limit. Epic Bio
+  (Epicrispr Biotechnologies) exposes no public API, so there are no per-key,
+  per-account or per-endpoint windows, no X-RateLimit-*/RateLimit-* response
+  headers, and no 429 semantics to record. The only rate signal the company
+  publishes is a `Crawl-delay: 10` directive in
+  https://epicrispr.com/robots.txt, which governs crawlers of the marketing site,
+  not API consumers. Verified zero, not an unchecked field.
+crawl_policy:
+  robots_txt: https://epicrispr.com/robots.txt
+  crawl_delay_seconds: 10
+  disallow: []

@@ -1,0 +1,65 @@
+# Epic Bio (Epicrispr Biotechnologies, Inc.)
+
+> Clinical-stage genetic medicines company in South San Francisco, California, founded
+> in 2018 by Stanford CRISPR pioneer Stanley Qi, Ph.D. Epic Bio develops epigenetic
+> editing therapies that modulate gene expression without cutting DNA, using its
+> proprietary Gene Expression Modulation System (GEMS) platform. Lead program EPI-321
+> is in first-in-human clinical study for facioscapulohumeral muscular dystrophy (FSHD).
+
+<!--
+generated: '2026-08-12'
+method: generated
+source: apis.yml + repo artifacts (the provider publishes no llms.txt; https://epicrispr.com/llms.txt -> 404)
+-->
+
+## Important disambiguation
+
+Epic Bio is **not** Epic Systems (the healthcare EHR vendor behind `open.epic.com` and
+its FHIR APIs), and it is **not** the "Epic" application at `epic.bio`, which belongs to
+Guerbet. Do not attribute any of those APIs to this company.
+
+## API surface
+
+**There is none.** Epic Bio is a therapeutics developer, not a software vendor. As of
+2026-08-12 it publishes no public API, no SDK, no webhooks, no developer portal, no
+machine-readable specification, and no GitHub organization. See `openapi/README.md` in
+this repository for the full contract-discovery probe table (every probe returned 404 or
+NXDOMAIN).
+
+## Technology platform (scientific, not developer-facing)
+
+- Gene Expression Modulation System (GEMS): a DNA-binding protein + tailored guide RNA +
+  modulator protein, delivered without double-strand DNA breaks.
+- DNA-binding proteins: CasMINI (exclusively licensed; among the smallest dCas proteins
+  shown to work in human cells) and proprietary variants including CasONYX.
+- Modulators: activators, repressors, histone modifiers, DNA methylators and chromatin
+  remodelers.
+- Guide RNAs: identified by a functional screening platform with proprietary computational
+  design methods. Internal R&D tooling — not exposed publicly.
+
+## Pipeline
+
+- EPI-321 — facioscapulohumeral muscular dystrophy (FSHD) — first-in-human clinical study;
+  enrollment and dose escalation completed.
+- Alpha-1 antitrypsin deficiency (A1AD) — preclinical.
+- Heterozygous familial hypercholesterolemia (HeFH) — preclinical.
+
+## Public pages
+
+- [Website](https://epicrispr.com/): corporate home.
+- [Platform](https://epicrispr.com/platform/): the GEMS platform.
+- [Science](https://epicrispr.com/science/): epigenetic editing approach.
+- [Pipeline](https://epicrispr.com/pipeline/): programs and stages.
+- [News](https://epicrispr.com/news/): press releases ([RSS](https://epicrispr.com/feed/)).
+- [Team](https://epicrispr.com/team/): leadership and board.
+- [For patients and caregivers](https://epicrispr.com/for-patients-and-caregivers/).
+- [Expanded access policy](https://epicrispr.com/expanded-access-policy/).
+- [Careers](https://epicrispr.com/careers/).
+- [Contact](https://epicrispr.com/contact/).
+- [Privacy policy](https://epicrispr.com/privacy-policy/).
+
+## Repository artifacts
+
+- `openapi/README.md`: contract-discovery probe record (no spec exists).
+- `well-known/epic-bio-well-known.yml`: `/.well-known/*` probe record (all 404).
+- `security/epic-bio-domain-security.yml`: TLS/HSTS/DNSSEC/CAA/SPF/DMARC probe.

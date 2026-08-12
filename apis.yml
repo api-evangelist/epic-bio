@@ -1,7 +1,18 @@
 aid: epic-bio
 name: Epic Bio
-description: 'Epic Bio is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Epic Bio (legally Epicrispr Biotechnologies, Inc.) is a clinical-stage
+  genetic medicines company in South San Francisco, California, founded in 2018 by
+  Stanford CRISPR pioneer Stanley Qi, Ph.D. It develops epigenetic editing therapies
+  that modulate gene expression without cutting DNA, built on its proprietary Gene
+  Expression Modulation System (GEMS) platform — a combination of ultracompact DNA-binding
+  proteins (CasMINI, CasONYX), tailored guide RNAs, and a large library of transcriptional
+  and epigenomic modulators. Its lead program EPI-321 is in first-in-human clinical
+  study for facioscapulohumeral muscular dystrophy (FSHD), with preclinical programs
+  in alpha-1 antitrypsin deficiency and heterozygous familial hypercholesterolemia.
+  The company is a therapeutics developer, not a software vendor: it publishes a corporate
+  and scientific website but no developer program, public API, SDK, or machine-readable
+  specification.'
+image: https://epicrispr.com/wp-content/uploads/2024/11/epicrispr-logo-768x452-1.png
 url: https://raw.githubusercontent.com/api-evangelist/epic-bio/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +23,14 @@ created: '2026-08-12'
 modified: '2026-08-12'
 tags:
 - Company
+- Biotechnology
+- Genetic Medicine
+- Gene Editing
+- CRISPR
+- Epigenetics
+- Therapeutics
+- Life Sciences
+- Clinical Stage
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +39,45 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://epicrispr.com/
+- type: About
+  url: https://epicrispr.com/science/
+- type: Blog
+  url: https://epicrispr.com/news/
+- type: BlogRSS
+  url: https://epicrispr.com/feed/
+- type: Support
+  url: https://epicrispr.com/contact/
+- type: PrivacyPolicy
+  url: https://epicrispr.com/privacy-policy/
+- type: Careers
+  url: https://epicrispr.com/careers/
+- type: Sitemap
+  url: https://epicrispr.com/sitemap_index.xml
+- type: DomainSecurity
+  url: security/epic-bio-domain-security.yml
+- type: LLMsTxt
+  url: llms/epic-bio-llms.txt
+x-enrichment:
+  date: '2026-08-12'
+  status: minimal
+  artifacts_added: 5
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Epic Bio is Epicrispr Biotechnologies, a clinical-stage epigenetic-editing
+    therapeutics company whose only host is a WordPress marketing site — the similarly
+    named epic.bio belongs to Guerbet and open.epic.com belongs to Epic Systems, so
+    neither of those API surfaces is this company's.
+  evidence:
+  - url: https://epicrispr.com/openapi.json
+    status: 404
+  - url: https://epicrispr.com/.well-known/agent-card.json
+    status: 404
+  - url: https://epicrispr.com/llms.txt
+    status: 404
+  - url: https://github.com/epicrispr
+    status: 404
+  checked: '2026-08-12'

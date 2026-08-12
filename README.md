@@ -42,5 +42,20 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Epic Bio is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+Epic Bio (legally **Epicrispr Biotechnologies, Inc.**) is a clinical-stage genetic medicines
+company in South San Francisco, California, founded in 2018 by Stanford CRISPR pioneer
+Stanley Qi, Ph.D. It develops epigenetic editing therapies that modulate gene expression
+without cutting DNA, built on its proprietary Gene Expression Modulation System (GEMS)
+platform. Its lead program EPI-321 is in first-in-human clinical study for
+facioscapulohumeral muscular dystrophy (FSHD).
+
+**No API surface.** Epic Bio is a therapeutics developer, not a software vendor. A full
+contract-discovery sweep on 2026-08-12 found no public API, SDK, developer portal,
+machine-readable specification, or GitHub organization — see
+[`openapi/README.md`](openapi/README.md) for the probe table.
+
+**Name collisions — these are different companies.** `epic.bio` is a Guerbet product login
+portal, and `open.epic.com` / `vendorservices.epic.com` belong to Epic Systems, the
+healthcare EHR vendor. Neither API surface belongs to Epicrispr Biotechnologies.
+
+- https://epicrispr.com/
