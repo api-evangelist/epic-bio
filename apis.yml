@@ -12,6 +12,17 @@ description: 'Epic Bio (legally Epicrispr Biotechnologies, Inc.) is a clinical-s
   The company is a therapeutics developer, not a software vendor: it publishes a corporate
   and scientific website but no developer program, public API, SDK, or machine-readable
   specification.'
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://epicrispr.com/wp-content/uploads/2024/11/epicrispr-logo-768x452-1.png
 url: https://raw.githubusercontent.com/api-evangelist/epic-bio/refs/heads/main/apis.yml
 x-type: company
