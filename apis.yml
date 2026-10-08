@@ -62,6 +62,10 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: Plans
+  url: plans/epic-bio-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/epic-bio-rate-limits.yml
 - type: Website
   url: https://epicrispr.com/
 - type: About
